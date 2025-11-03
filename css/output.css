@@ -943,6 +943,18 @@ video {
   background-image: url('/src/resources/subtle-prism.svg');
 }
 
+.bg-\[url\(\'assets\/bg\.svg\'\)\] {
+  background-image: url('assets/bg.svg');
+}
+
+.bg-\[url\(\'src\/bg\.svg\'\)\] {
+  background-image: url('src/bg.svg');
+}
+
+.bg-\[url\(\'src\/resources\/bg\.svg\'\)\] {
+  background-image: url('src/resources/bg.svg');
+}
+
 .from-blue-500 {
   --tw-gradient-from: #3b82f6 var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(59 130 246 / 0) var(--tw-gradient-to-position);
