@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer utilities {
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 25s linear infinite;
+  }
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+.containerPadding {
+  @apply px-10 md:px-16;
+}
+.sectionVerticalSpacing {
+  @apply py-8  md:py-5;
+}
+.headerVerticalSpacing {
+  @apply py-12 md:px-11;
+}
+.gapBetweenFeatures {
+  @apply gap-8;
+}
+.headings {
+  @apply font-bold  text-mainText text-4xl md:text-5xl leading-tight font-roboto;
+}
+.subheadings {
+  @apply text-2xl  md:text-2xl leading-7 text-gray-600 font-roboto;
+}
+.featureTitles {
+  @apply font-semibold text-xl font-roboto;
+}
+.featureText {
+  @apply text-gray-600 text-sm md:text-base font-roboto;
+}
+/* .border {
+  @apply border-solid rounded-xl px-2 py-1 border-mainText ;
+} */
+.nav-items {
+  @apply cursor-pointer inline-block transform transition-transform 
+         duration-300 ease-in-out rounded-lg  p-2;
+  will-change: transform;
+}
+
+.nav-items:hover {
+  @apply text-primary scale-110 shadow-lg;
+}
+.nav-items.active {
+  @apply underline underline-offset-8 text-primary font-semibold;
+}
+.btn-primary {
+  @apply inline-block bg-primary text-white px-12 py-3 rounded-3xl shadow-md transform transition-transform duration-300 ease-in-out
+           hover:scale-105 hover:shadow-lg;
+  will-change: transform;
+}
+.support {
+  @apply transform transition-transform 
+         duration-500 ease-in-out rounded-3xl;
+  will-change: transform;
+}
+.support:hover {
+  @apply scale-110 shadow-lg;
+}
+.analytics {
+  @apply transform transition-transform 
+         duration-500 ease-in-out rounded-3xl;
+  will-change: transform;
+}
+.analytics:hover {
+  @apply scale-110 shadow-lg;
+}
+.marketing-tools {
+  @apply transform transition-transform 
+         duration-500 ease-in-out rounded-3xl;
+  will-change: transform;
+}
+.marketing-tools:hover {
+  @apply scale-110 shadow-lg;
+}
+.CRM {
+  @apply transform transition-transform 
+         duration-500 ease-in-out rounded-3xl;
+  will-change: transform;
+}
+.CRM:hover {
+  @apply scale-110 shadow-lg;
+}
+.project-management {
+  @apply transform transition-transform 
+         duration-500 ease-in-out rounded-3xl;
+  will-change: transform;
+}
+.project-management:hover {
+  @apply scale-110 shadow-lg;
+}
+.data-security {
+  @apply transform transition-transform 
+         duration-500 ease-in-out rounded-3xl;
+  will-change: transform;
+}
+.data-security:hover {
+  @apply scale-110 shadow-lg;
+}
+.mobile-menu {
+  @apply transition-all duration-300 ease-in-out overflow-hidden;
+  max-height: 100vh;
+}
+.mobile-menu.open {
+  @apply max-h-screen;
+}
+.mobile-menu:not(.open) {
+  @apply max-h-0;
+}
+/* KEEP THIS - This is your original, correct CSS */
+.group:hover .card:not(:hover) {
+  @apply opacity-60 blur-[1px];
+}
+
+/* ... all your other .card styles ... */
+.card {
+  @apply transform rounded-3xl
+transition-[transform,box-shadow,background-color] duration-150 ease-in-out
+transition-[opacity,filter] duration-150 ease-in-out;
+  will-change: transform, box-shadow, background-color, color, opacity, filter;
+}
+.card * {
+  @apply transition-colors duration-100 ease-in-out;
+}
+.card:hover {
+  @apply scale-105 -translate-y-16 shadow-[0_30px_100px_rgba(59,130,246,0.65)] bg-primary/50;
+}
+.card:hover * {
+  @apply text-white;
+}
+
+.toggle-btn {
+  @apply text-smallText bg-transparent border border-transparent transition-all duration-200 ease-out;
+  will-change: background-color, color, border-color, box-shadow;
+}
+
+.toggle-btn.active {
+  @apply bg-primary text-white border border-primary shadow-sm;
+}
+.fade {
+  @apply transition-opacity duration-300 ease-out;
+}
+.hidden {
+  @apply opacity-0 pointer-events-none;
+}
