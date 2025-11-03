@@ -16,7 +16,6 @@ export default {
       },
       backgroundImage: {
         header: "url('/src/resources/subtle-prism.svg')",
-        animated: "url('/src/resources/Animated Shape.svg')",
       },
       fontWeight: {
         semiMedium: "450",

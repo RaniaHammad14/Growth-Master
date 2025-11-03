@@ -935,6 +935,10 @@ video {
   background-color: rgb(255 255 255 / 0.8);
 }
 
+.bg-\[url\(\'src\/resources\/subtle-prism\.svg\'\)\] {
+  background-image: url('src/resources/subtle-prism.svg');
+}
+
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -959,8 +963,12 @@ video {
   background-image: url('src/resources/subtle.svg');
 }
 
-.bg-\[url\(\'src\/resources\/subtle-prism\.svg\'\)\] {
-  background-image: url('src/resources/subtle-prism.svg');
+.bg-\[url\(\'subtle-prism\.svg\'\)\] {
+  background-image: url('subtle-prism.svg');
+}
+
+.bg-\[url\(\'\/public\/subtle-prism\.svg\'\)\] {
+  background-image: url('/public/subtle-prism.svg');
 }
 
 .from-blue-500 {
@@ -993,9 +1001,21 @@ video {
   --tw-gradient-to: #2563EB var(--tw-gradient-to-position);
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.bg-center {
+  background-position: center;
+}
+
+.bg-no-repeat {
+  background-repeat: no-repeat;
 }
 
 .p-1 {
